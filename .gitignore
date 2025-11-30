@@ -1,0 +1,11 @@
+*.txt
+apks/
+.claude/
+
+ground_truth/
+
+__pycache__/
+*.pyc
+*.pyo
+
+*.log
