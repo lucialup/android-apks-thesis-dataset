@@ -2,7 +2,11 @@
 apks/
 .claude/
 
-ground_truth/
+ground_truth/syscall_traces/
+ground_truth/sboms/
+ground_truth/apks_needing_traces.txt
+ground_truth/analysis/
+
 
 __pycache__/
 *.pyc
