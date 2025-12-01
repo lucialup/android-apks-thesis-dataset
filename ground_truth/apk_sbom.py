@@ -1,13 +1,3 @@
-#!/usr/bin/env python3
-"""
-APK SBOM Generator
-Makes a single SBOM file per APK with:
-- App metadata name, package, version, permissions
-- Third-party libraries (from DEX class)
-- Trackers (from known signatures)
-- AndroidX dependencies (from META-INF)
-"""
-
 import json
 import sys
 import os
@@ -320,7 +310,14 @@ def analyze_apk(apk_path: str) -> dict:
 
     return result
 
-
+"""
+APK SBOM Generator
+Makes a single SBOM file per APK with:
+- App metadata name, package, version, permissions
+- Third-party libraries (from DEX class)
+- Trackers (from known signatures)
+- AndroidX dependencies (from META-INF)
+"""
 def main():
     if len(sys.argv) < 2:
         print("Usage: apk_sbom.py <apk_path> [output.json]", file=sys.stderr)
