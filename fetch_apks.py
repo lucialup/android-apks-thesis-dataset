@@ -4,7 +4,7 @@ import os
 
 INDEX_URL = "https://f-droid.org/repo/index-v2.json"
 MIN_SDK = 34 
-OUTPUT_FILE = "download_list2.txt"
+OUTPUT_FILE = "download_list.txt"
 LIMIT = 500
 
 def get_compatible_apks():
